@@ -1,7 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  const features = { a: 2, b: 3 };
   return (
     <div className="App">
       <header className="App-header">
@@ -15,11 +16,21 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React<br></br>
+          <Test {...{ ...features }} />
         </a>
       </header>
     </div>
   );
 }
+
+const Test = ({ a, b }) => {
+  console.log(a, b);
+  return (
+    <div>
+      {a} and {b}
+    </div>
+  );
+};
 
 export default App;
