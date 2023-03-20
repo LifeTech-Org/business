@@ -1,0 +1,14 @@
+/* No CSS */ /*# sourceMappingURL=input.css.map */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  section,
+  footer {
+    @apply px-6 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-5 md:py-10;
+  }
+  .ta {
+    @apply bg-cyan-800 h-1 w-20 my-2;
+  }
+}
