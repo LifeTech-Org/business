@@ -19,6 +19,16 @@ const Services = () => {
       nav: false,
       autoplayButtonOutput: false,
       autoplay: true,
+      responsive: {
+        640: {
+          items: 2,
+          gutter: 14,
+        },
+        1024: {
+          items: 3,
+          gutter: 14,
+        },
+      },
     });
     slider.events.on("indexChanged", changeIndex);
 
@@ -43,18 +53,20 @@ const Services = () => {
   ];
   return (
     <section className="flex flex-col bg-gray-50">
-      <article className="flex flex-col">
-        <div className="ta"></div>
-        <h3 className="capitalize text-lg font-semibold">
-          our excellent services
-        </h3>
-        <p className="text-sm text-gray-400 py-4 leading-7">
+      <article className="flex flex-col lg:flex-row">
+        <div className="lg:flex-1">
+          <div className="ta"></div>
+          <h3 className="capitalize text-lg font-semibold">
+            our excellent services
+          </h3>
+        </div>
+        <p className="text-sm text-gray-400 py-4 leading-7   lg:flex-1">
           Check out our best service you can possibly orders in building your
           company and don't forget to ask via our email or our customer service
           if you are interested in using our services
         </p>
       </article>
-      <ul className="service-slider">
+      <ul className="service-slider ">
         {services.map((service, index) => (
           <li key={index} className="slider-item">
             <Service {...{ ...service }} />

@@ -2,8 +2,8 @@ import Dianne from "../assets/imgs/dianne.png";
 import Archi from "../assets/imgs/achi.png";
 const Team = () => {
   return (
-    <section className="flex flex-col bg-gray-50">
-      <article className="my-3">
+    <section className="flex flex-col bg-gray-50 md:flex-row-reverse md:gap-4 lg:gap-14">
+      <article className="my-3 md:flex-1">
         <div className="ta"></div>
         <h3 className="mt-1 capitalize text-lg font-semibold">
           meet and talk with
@@ -27,7 +27,7 @@ const Team = () => {
         style={{
           backgroundImage: `url("../assets/imgs/achi.png")`,
         }}
-        className="relative h-full w-full overflow-hidden p-7"
+        className="relative h-full w-full overflow-hidden p-7 md:flex-1"
       >
         {/* <img src={Archi} alt={"building"} className="w-full top-0 bottom-0" /> */}
         <article className="bg-black p-4">

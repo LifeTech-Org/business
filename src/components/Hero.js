@@ -16,7 +16,7 @@ const Hero = () => {
     { count: "20", title: "award winning" },
   ];
   return (
-    <section className="text-white px-6 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-5 md:py-10 bg-black relative">
+    <section className="text-white px-6 sm:px-8 md:px-12 lg:px-16 xl:px-28 py-5 md:pb-0 bg-black relative">
       <div className="flex h-16 items-center">
         <dl className="flex-1 text-sm font-bold capitalize text-gray-300">
           <dt>general</dt>
@@ -32,20 +32,29 @@ const Hero = () => {
           </ul>
         </nav>
       </div>
-      <article className="flex flex-col">
-        <h2 className="text-gray-100 text-4xl font-semibold py-6">
-          We Provide Achitectural design and Construction
-        </h2>
-        <p className="text-gray-400 text-sm py-3 mr-12">
-          ​More than 100 building and housing projects that we have built. The
-          building owner chose us over other contractors in Jakarta, because our
-          work is different
-        </p>
-        <button className="text-gray-100 text-sm px-6 py-3 w-fit bg-slate-800 my-4 font-semibold">
-          Discover more
-        </button>
-      </article>
-      <dl className="flex mt-4 mb-28">
+      <div className="flex">
+        <article className="flex flex-1 flex-col lg:max-w-lg">
+          <h2 className="text-gray-100 text-4xl font-semibold py-6">
+            We Provide Achitectural design and Construction
+          </h2>
+          <p className="text-gray-400 text-sm py-3 mr-12 md:max-w-md">
+            ​More than 100 building and housing projects that we have built. The
+            building owner chose us over other contractors in Jakarta, because
+            our work is different
+          </p>
+          <button className="text-gray-100 text-sm px-6 py-3 w-fit bg-slate-800 my-4 font-semibold">
+            Discover more
+          </button>
+        </article>
+        <div className="flex-1 hidden lg:inline-flex relative h-full">
+          <img
+            src={hero}
+            alt="building"
+            className="h-auto w-72 absolute right-0  "
+          />
+        </div>
+      </div>
+      <dl className="flex mt-4 sm:max-w-sm mb-28 md:max-w-xs md:mt-16 md:py-4 lg:mt-24 lg:mb-0">
         {stats.map(({ count, title }, index) => (
           <div key={index} className="flex-col flex-1">
             <dt className="text-3xl font-bold">
@@ -58,7 +67,7 @@ const Hero = () => {
           </div>
         ))}
       </dl>
-      <article className="flex absolute left-0 right-0 bottom-0 bg-cyan-900 mt-4 py-4 px-5">
+      <article className="flex absolute left-0 right-0 bottom-0 bg-cyan-900 mt-4 py-4 px-5 md:left-96 md:bottom-0 lg:max-w-xl lg:left-auto lg:right-0">
         <dl className="text-gray-200  font-semibold mr-4 flex flex-col justify-center">
           <dt className="text-xs">General</dt>
           <dd className="text-sm">Projects</dd>

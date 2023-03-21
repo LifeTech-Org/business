@@ -28,7 +28,7 @@ const News = () => {
       <h3 className="capitalize text-lg font-semibold pt-2 pb-3">
         News & Update
       </h3>
-      <ul className="flex flex-col relative">
+      <ul className="flex flex-col relative sm:grid sm:grid-cols-2 md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-3">
         {news.map((_news, index) => (
           <li key={index} className="flex-1 my-5 relative">
             <NewsBox {...{ ..._news }} />

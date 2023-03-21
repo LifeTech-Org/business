@@ -28,18 +28,20 @@ const Features = () => {
   ];
   return (
     <section className="flex flex-col">
-      <article className="flex flex-col">
-        <div className="ta"></div>
-        <h3 className="flex-1 capitalize text-lg font-semibold">
-          what makes us different
-        </h3>
+      <article className="flex flex-col lg:flex-row">
+        <div className="lg:flex-1">
+          <div className="ta"></div>
+          <h3 className="flex-1 capitalize text-lg font-semibold">
+            what makes us different
+          </h3>
+        </div>
         <p className="flex-1 text-sm text-gray-400 py-4 leading-7">
           Check out our best service you can possibly orders in building your
           company and don't forget to ask via our email or our customer service
           if you are interested in using our services
         </p>
       </article>
-      <ul className="grid grid-cols-2 py-5 gap-8">
+      <ul className="grid grid-cols-2 py-5 gap-8 lg:grid-cols-4 lg:gap-14 lg:pt-7">
         {features.map((feature, index) => (
           <li className="flex-1">
             <Feature key={index} {...{ ...feature }} />

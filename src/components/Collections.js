@@ -20,7 +20,17 @@ const Collections = () => {
       controls: false,
       nav: false,
       autoplayButtonOutput: false,
-      autoplay: false,
+      autoplay: true,
+      responsive: {
+        640: {
+          items: 2,
+          gutter: 14,
+        },
+        1024: {
+          items: 3,
+          gutter: 12,
+        },
+      },
     });
     slider.events.on("indexChanged", changeIndex);
 

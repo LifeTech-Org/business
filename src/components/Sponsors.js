@@ -15,7 +15,7 @@ const Sponsors = () => {
   ];
   return (
     <section>
-      <ul className="grid grid-cols-3 gap-10">
+      <ul className="grid grid-cols-3 gap-10 lg:grid-cols-5 ">
         {sponsors.map(({ img: { src, alt } }, index) => (
           <li key={index} className="flex items-center justify-center">
             <img src={src} alt={alt} className="w-28 h-auto" />

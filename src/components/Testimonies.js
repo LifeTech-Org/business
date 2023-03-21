@@ -20,10 +20,14 @@ const Testimonies = () => {
     content,
   } = { ...testimonies[index] };
   return (
-    <section className="flex flex-col bg-black">
+    <section className="flex flex-col bg-black md:flex-row">
       <div className="relative flex justify-center">
-        <img src={src} alt={alt} className="w-full h-auto max-h-72 " />
-        <article className="bg-white bottom-0 h-auto w-48 p-5 absolute">
+        <img
+          src={src}
+          alt={alt}
+          className="w-full h-auto max-h-72 md:w-80 md:h-56"
+        />
+        <article className="bg-white bottom-0 h-auto w-48 p-5 absolute md:absolute md:w-56 md:h-32 md:left-10 md:-bottom-2">
           <div className="absolute -top-7 right-0 left-0 flex justify-center">
             <div className="h-12 w-12 rounded-full text-cyan-700 bg-white shadow-md flex items-center justify-center">
               <FormatQuoteIcon />
@@ -35,7 +39,7 @@ const Testimonies = () => {
           <p className="text-xs text-gray-400 pt-1 leading-5">{content}</p>
         </article>
       </div>
-      <article className="py-8">
+      <article className="py-8 md:ml-44 lg:max-w-md">
         <h3 className="capitalize text-gray-100 text-lg font-semibold">
           What we have done <br /> what our Customers say
         </h3>

@@ -1,8 +1,8 @@
 import story from "../assets/imgs/story.png";
 const Story = () => {
   return (
-    <section className="flex flex-nowrap">
-      <article className="flex-1">
+    <section className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14">
+      <article className="">
         <div className="ta"></div>
         <h2 className="flex-1 capitalize text-lg font-bold">
           our story
@@ -20,7 +20,7 @@ const Story = () => {
           See more
         </button>
       </article>
-      <div className="hidden">
+      <div className="hidden lg:inline">
         <img src={story} alt={""} />
       </div>
     </section>

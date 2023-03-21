@@ -5,12 +5,12 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col bg-black">
-      <article className="">
+    <footer className="flex flex-col bg-black sm:grid sm:grid-cols-2 sm:gap-4 md:gap-12 lg:gap-14">
+      <article className="sm:flex-1 lg:max-w-md">
         <h3 className="capitalize font-semibold text-md text-gray-200">
           general project
         </h3>
-        <p className="text-sm text-gray-100 py-6">
+        <p className="text-sm text-gray-100 py-6 ">
           is a general contractor company based in Jakarta. More than 25 years
           of experience in building and carving out Indonesia's development.
         </p>
@@ -23,7 +23,7 @@ const Footer = () => {
           ]}
         />
       </article>
-      <div className="flex-col mt-8">
+      <div className="flex flex-col mt-8 sm:mt-0  sm:flex-row sm:gap-12 md:flex-1 md:gap-14 ">
         <FooterLinks
           title={"company"}
           links={[
@@ -64,7 +64,7 @@ const ContactsAvatars = ({ contacts }) => {
 
 const FooterLinks = ({ title, links }) => {
   return (
-    <div className="flex flex-col mb-4">
+    <div className="flex flex-col mb-4 lg:flex-1">
       <h4 className="capitalize font-semibold text-md text-gray-200">
         {title}
       </h4>
