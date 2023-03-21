@@ -7,11 +7,7 @@ import { tns } from "tiny-slider";
 import { ArrowRight } from "@mui/icons-material";
 import Navigate from "./Navigate";
 const Collections = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const changeIndex = (e) => {
-    // setCurrentIndex(e.index);
-    // console.log(e.index);
-  };
+  const changeIndex = (e) => {};
   useEffect(() => {
     const slider = tns({
       container: ".collection-slider",

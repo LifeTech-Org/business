@@ -1,5 +1,4 @@
 import Dianne from "../assets/imgs/dianne.png";
-import Archi from "../assets/imgs/achi.png";
 const Team = () => {
   return (
     <section className="flex flex-col bg-gray-50 md:flex-row-reverse md:gap-4 lg:gap-14">

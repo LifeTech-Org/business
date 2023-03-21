@@ -4,7 +4,7 @@ import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import Client1 from "../assets/imgs/client-1.png";
 const Testimonies = () => {
-  const [index, setIndex] = useState(0);
+  const [index] = useState(0);
   const testimonies = [
     {
       author: { img: { src: Client1, alt: "client" }, name: "jacob molen" },
